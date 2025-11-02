@@ -3,37 +3,106 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 10%;
+    // height: max(5rem, 75px);
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    background-color: lightblue;
+    // background-color: rgb(24, 141, 14);
+    background-color: rgb(23, 24, 23);
+    color: rgb(245, 245, 245);
 }
 
 .header-left {
     display: flex;
     align-items: center;
-    margin-left: 2rem;
+    justify-content: space-evenly;
+    width: 20rem;
+    flex-shrink: 0;
+    // gap: 3rem;
+    // margin-left: 1rem;
 }
 
-.napps-finances-logo-container {
-    margin-left: 1rem;
-    margin-right: 5rem;
+.hamburger-icon-container {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-icon-container:hover {
+    background-color: rgb(75, 73, 73);
+}
+
+.hamburger-icon {
+    width: 1.75rem;
 }
 
 .napps-finances-logo {
-    margin-left: 2rem;
-    width: 4rem;
+    // margin-left: 3rem;
+    width: 10rem;
+}
+
+.hamburger-icon-container:hover, .napps-finances-logo:hover {
+    transition-duration: 0.10s;
+    cursor: pointer;
 }
 
 .header-middle {
     flex: 1;
+    max-width: 65rem;
+    min-width: 40rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
+.dashboard-tab, .budgets-tab, .transactions-tab, 
+.financial-health-tab, .reports-and-analytics-tab {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .header-right {
-    margin-right: 2rem;
+    // margin-right: 5rem;
+    width: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-shrink: 0;
+}
+
+.profile-picture, .profile-picture-default {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1.5rem;
+}
+
+.profile-picture-default {
+    background-color: rgb(142, 124, 195);
+    color: rgb(31, 27, 46);
+    font-size: 1.75rem;
+    font-family: "Baloo 2", Arial;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture:hover, .profile-picture-default:hover {
+    transition-duration: 0.10s;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.dashboard-tab:hover, .budgets-tab:hover, .transactions-tab:hover, 
+.financial-health-tab:hover, .reports-and-analytics-tab:hover, .login-tab:hover {
+    transition-duration: 0.10s;
+    color: darkgreen;
+    cursor: pointer;
 }
