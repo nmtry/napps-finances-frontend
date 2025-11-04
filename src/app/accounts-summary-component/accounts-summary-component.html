@@ -1,0 +1,58 @@
+<div class="accounts-summary-container">
+    <div class="accounts-summary-title">
+        Accounts Summary
+    </div>
+
+    <div class="account-summary">
+        <div class="account-id-data">
+            <div class="account-summary-name">
+                M&T Savings Account
+            </div>
+            <div class="account-summary-type">
+                Savings
+            </div>
+        </div>
+        <div class="account-summary-balance">
+            {{ balance | currency:'USD':'symbol':'1.2-2' }}
+        </div>
+    </div>
+
+    <div class="account-summary">
+        <div class="account-id-data">
+            <div class="account-summary-name">
+                My Checkingkljsadfjl;asjdklfjas;ldkfjl;kasdjlkfajsl;dkjf;laksjdlk;fajsl;dkjf;laksd
+            </div>
+            <div class="account-summary-type">
+                Checking
+            </div>
+        </div>
+        <div class="account-summary-balance">
+            $43000000.01
+        </div>
+    </div>
+
+    <div class="account-summary">
+        <div class="account-id-data">
+            <div class="account-summary-name">
+                USAA CC
+            </div>
+            <div class="account-summary-type">
+                Credit Card
+            </div>
+        </div>
+        <div class="cc-summary-data">
+            <div class="cc-summary-balance-data">
+                <div class="cc-summary-balance">
+                    $187.43/$5,000.00
+                </div>
+                <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+            </div>
+            <div class="cc-due-date-divider">
+                |
+            </div>
+            <div class="cc-due-date">
+                Due: {{ ccDueDate | date: 'MMM. d' }}
+            </div>
+        </div>
+    </div>
+</div>

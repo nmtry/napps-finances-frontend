@@ -1,0 +1,18 @@
+| Element                  | Color     | Notes              |
+| ------------------------ | --------- | ------------------ |
+| Navbar                   | `#1F2937` | Deep slate-gray    |
+| Body background          | `#eef0f0` | Light neutral gray |
+| Card/background surfaces | `#FFFFFF` | Pure white         |
+| Primary text             | `#111827` | Very dark gray     |
+| Secondary text           | `#6B7280` | Muted gray         |
+| Accent (positive/growth) | `#16A34A` | Fresh green        |
+| Warning/accent (expense) | `#DC2626` | Red for negatives  |
+| Highlight (CTA button)   | `#15803D` | Darker green       |
+
+
+| Purpose                          | Suggested Color | Why                                                    |
+| -------------------------------- | --------------- | ------------------------------------------------------ |
+| **Primary text (links, labels)** | `#F9FAFB`       | Very light gray — great contrast and not harsh white   |
+| **Hover / active link**          | `#D1D5DB`       | Slightly dimmer light gray to show subtle change       |
+| **Selected / highlighted item**  | `#16A34A`       | Your accent green, ties into brand and draws attention |
+| **Disabled / secondary text**    | `#9CA3AF`       | Muted gray for inactive items                          |

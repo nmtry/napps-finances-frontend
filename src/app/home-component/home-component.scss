@@ -1,0 +1,17 @@
+.overview-title {
+    font-size: 2rem;
+    color: #111827;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.summary-grid > * {
+  min-width: 0; /* 👈 allows the grid items to shrink within their 1fr space */
+}

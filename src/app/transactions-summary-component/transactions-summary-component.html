@@ -1,0 +1,56 @@
+<div class="transactions-summary-container">
+    <div class="transactions-summary-title">
+        Recent Transactions
+    </div>
+
+    <app-transactions-summary-chart-component></app-transactions-summary-chart-component>
+
+    <table class="transactions-table">
+        <thead class="transactions-table-header">
+            <tr>
+                <th (click)="sortBy('date')" scope="col" class="sortable">
+                    Date
+                    <span class="sort-indicator" *ngIf="sortKey === 'date'">
+                        {{ sortDir === 1 ? '▲' : '▼' }}
+                    </span>
+                </th>
+                <th (click)="sortBy('description')" scope="col" class="sortable">
+                    Description
+                    <span class="sort-indicator" *ngIf="sortKey === 'description'">
+                        {{ sortDir === 1 ? '▲' : '▼' }}
+                    </span>
+                </th>
+                <th (click)="sortBy('amount')" scope="col" class="sortable-amount">
+                    Amount
+                    <span class="sort-indicator" *ngIf="sortKey === 'amount'">
+                        {{ sortDir === 1 ? '▲' : '▼' }}
+                    </span>
+                </th>
+                <th scope="col">Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let t of transactions; trackBy: trackById" tabindex="0">
+                <td>
+                    {{ t.date | date:'MMM d, y' }}
+                </td>
+                <td>
+                    <div class="transaction-description-data">
+                        {{ t.target }}
+                        <div class="transaction-description">
+                            {{ t.description }}
+                        </div>
+                    </div>
+                </td>
+                <td class="amount">
+                    {{ t.amount | currency:'USD':'symbol':'1.2-2' }}
+                </td>
+                <td>
+                    <div class="pill" [ngClass]="{'Income': t.type === 'Income', 'Expense': t.type === 'Expense'}">
+                        {{ t.type }}
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

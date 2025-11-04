@@ -1,0 +1,46 @@
+.transactions-summary-container {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #111827;
+    min-height: 7rem;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.35);
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.transactions-summary-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.transactions-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+th {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  background-color: #1F2937;
+  color: white;
+}
+
+.sortable, .sortable-amount {
+    cursor: pointer;
+}
+
+.transaction-description-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-description {
+    border-top: 1px solid lightgray;
+    font-size: 0.8rem;
+}

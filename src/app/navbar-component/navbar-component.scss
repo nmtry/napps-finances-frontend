@@ -9,9 +9,8 @@
     align-items: center;
     justify-content: space-between;
 
-    // background-color: rgb(24, 141, 14);
-    background-color: rgb(23, 24, 23);
-    color: rgb(245, 245, 245);
+    background-color: #1F2937;
+    color: #F9FAFB;
 }
 
 .header-left {
@@ -20,8 +19,6 @@
     justify-content: space-evenly;
     width: 20rem;
     flex-shrink: 0;
-    // gap: 3rem;
-    // margin-left: 1rem;
 }
 
 .hamburger-icon-container {
@@ -34,15 +31,14 @@
 }
 
 .hamburger-icon-container:hover {
-    background-color: rgb(75, 73, 73);
+    background-color: rgb(96, 96, 96);
 }
 
 .hamburger-icon {
-    width: 1.75rem;
+    width: 1.5rem;
 }
 
 .napps-finances-logo {
-    // margin-left: 3rem;
     width: 10rem;
 }
 
@@ -60,15 +56,13 @@
     justify-content: space-evenly;
 }
 
-.dashboard-tab, .budgets-tab, .transactions-tab, 
-.financial-health-tab, .reports-and-analytics-tab {
+.header-tab {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .header-right {
-    // margin-right: 5rem;
     width: 14rem;
     display: flex;
     align-items: center;
@@ -100,9 +94,17 @@
     opacity: 0.8;
 }
 
-.dashboard-tab:hover, .budgets-tab:hover, .transactions-tab:hover, 
-.financial-health-tab:hover, .reports-and-analytics-tab:hover, .login-tab:hover {
+.header-tab, .login-tab {
+    color: #F9FAFB;
+}
+
+.header-tab:hover, .login-tab:hover {
     transition-duration: 0.10s;
-    color: darkgreen;
+    color: #D1D5DB;
     cursor: pointer;
+}
+
+.active, .active:hover {
+    color: #16A34A;
+    font-size: 1.1rem;
 }

@@ -1,0 +1,43 @@
+.accounts-summary-container {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #111827;
+    min-height: 7rem;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.35);
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.accounts-summary-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.account-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.5px solid rgb(196, 196, 196);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.account-id-data, .account-summary-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.account-summary-type {
+    font-size: 0.8rem;
+}
+
+.cc-summary-data {
+    display: flex;
+    flex-direction: row;
+}
+
+.cc-due-date-divider {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
